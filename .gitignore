@@ -1,8 +1,8 @@
-# Unreal Engine gitignore file
+# Игнорировать папку exemple
+exemple/
 
-# Ignore binary files
-Binaries/
-Build/
+# Игнорировать папку Quest_exemple (если существует)
+Quest_exemple/
 DerivedDataCache/
 Intermediate/
 Saved/
