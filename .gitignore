@@ -1,0 +1,68 @@
+# Unreal Engine gitignore file
+
+# Ignore binary files
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Ignore user-specific files
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Ignore Visual Studio files
+.vs/
+*.VC.db
+*.VC.VC.opendb
+
+# Ignore Mac files
+.DS_Store
+
+# Ignore logs and crash reports
+*.log
+*.dmp
+
+# Ignore project-specific files
+*.xcodeproj
+*.xcworkspace
+*.xcuserdata
+
+# Ignore other temporary files
+*.tmp
+*.temp
+*.cache
+
+# Ignore Unreal Engine auto-generated files
+*.generated.h
+
+# Ignore config files that are user-specific
+Saved/Config/
+
+# Ignore build products
+*.exe
+*.dll
+*.lib
+*.app
+*.so
+*.dylib
+
+# Ignore other common files
+*.pdb
+*.idb
+*.ipch
+
+# Ignore Unreal Engine plugin intermediate files
+Plugins/*/Intermediate/
+
+# Ignore Unreal Engine saved files
+Saved/
+
+# Ignore Unreal Engine intermediate files
+Intermediate/
