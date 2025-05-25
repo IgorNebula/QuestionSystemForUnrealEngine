@@ -21,6 +21,7 @@ Saved/
 .vs/
 *.VC.db
 *.VC.VC.opendb
+.vscode
 
 # Ignore Mac files
 .DS_Store
