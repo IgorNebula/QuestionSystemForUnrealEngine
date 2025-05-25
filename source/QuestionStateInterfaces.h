@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 #include <vector>
 
@@ -18,7 +20,7 @@ public:
  Интерфейс для передачи сообщений между ветвями
 */
 
-class IsignalHandler
+class ISignalHandler
 {
 public:
   virtual void sendSignal(const std::string &signal) = 0;

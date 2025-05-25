@@ -5,6 +5,32 @@
 #include "QuestionStateInterfaces.h"
 #include "StateManager.h"
 
-class EventDicpatcher
+class Context; // Forward declaration
+
+/**
+ * @class EventDispatcher
+ * @brief Класс для отправки событий в систему состояний квеста.
+ *
+ * Использует StateManager для передачи событий и вызова соответствующих обработчиков.
+ */
+class EventDispatcher
 {
+public:
+  /**
+   * @brief Конструктор.
+   * @param stateManager Ссылка на менеджер состояний.
+   */
+  EventDispatcher(StateManager &stateManager);
+
+  /**
+   * @brief Отправляет событие с обработчиком  и контекстом.
+   *
+   * @param event Имя события.
+   * @param handler Функция-обработчик события.
+   * @param context Контекст, передаваемый обработчику.
+   */
+  void dispatchEvent(const std::string &event, std::function<void(Context &)> handler, Context &context);
+
+private:
+  StateManager &stateManager; ///< Менеджер состояний для обработки событий.
 };
