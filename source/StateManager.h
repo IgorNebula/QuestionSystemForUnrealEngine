@@ -5,8 +5,11 @@
 #include <functional>
 #include "QuestionStateInterfaces.h"
 
+<<<<<<< HEAD
 class Context; // Forward declaration
 
+=======
+>>>>>>> c4f17cd1fac00b27a842bf79c2401b5cf69a8871
 /**
  * @class StateManager
  * @brief Класс для управления текущим состоянием квеста.
@@ -45,4 +48,8 @@ public:
 
 private:
   std::shared_ptr<IQuestState> currentState; ///< Текущее состояние квеста.
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> c4f17cd1fac00b27a842bf79c2401b5cf69a8871
