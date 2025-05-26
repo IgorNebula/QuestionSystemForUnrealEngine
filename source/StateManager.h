@@ -33,7 +33,7 @@ public:
    * @param handler Функция-обработчик события.
    * @param context Контекст, передаваемый обработчику.
    */
-  void handleEvent(const std::string &event, std::function<void(Context &)> handler, Context &context);
+  virtual void handleEvent(const std::string &event, std::function<void(Context &)> handler, Context &context);
 
   /**
    * @brief Выполняет действия при входе в текущее состояние.
